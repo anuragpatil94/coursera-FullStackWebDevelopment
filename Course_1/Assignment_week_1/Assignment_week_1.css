@@ -1,0 +1,30 @@
+fieldset {
+    background: lightyellow;
+    border: 10px solid yellow;
+    width: 720px;
+    margin-bottom: 10px;
+}
+
+label {
+    width: 180px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+}
+
+label:hover {
+    font-size: 40px
+}
+
+.rad_check {
+    width: auto;
+}
+
+span .range {
+    text-align: center;
+}
+
+textarea {
+    width: 360px;
+    height: 50px;
+}
