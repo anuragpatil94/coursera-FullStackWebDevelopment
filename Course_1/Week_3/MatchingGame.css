@@ -1,0 +1,33 @@
+  #theBody {
+      background-color: #d3d3d3;
+  }
+  
+  img {
+      position: absolute
+  }
+  
+  div {
+      position: absolute;
+      max-height: 500px;
+      max-width: 500px;
+      height: 100%;
+      width: 100%;
+  }
+  
+  #container {
+      margin-left: 17%;
+      border: 1px solid black;
+      max-width: 1000px;
+      width: 100%;
+  }
+  
+  #rightSide {
+      left: 500px;
+      border-left: 1px solid black
+  }
+  
+  h2,
+  h3,
+  p {
+      text-align: center
+  }
