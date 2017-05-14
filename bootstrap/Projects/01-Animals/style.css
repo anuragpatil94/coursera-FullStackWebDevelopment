@@ -1,0 +1,32 @@
+body{
+  /*url,no repeating images, center from left-right, center from top-bottom, image fixed */
+  background: url('images/elephant1.jpg') no-repeat center center fixed;
+  /*Full Sceen Image Responsive*/
+  background-size: cover;
+}
+/*
+font-family: 'Indie Flower', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Lobster Two', cursive;
+*/
+.hero{
+  color: #fff;
+  margin-top: 20%;
+  text-align: center;
+  font-size: 75px;
+  /*letter-spacing: -.07em;*/
+  line-height: 1.2em;
+  font-family: 'Indie Flower', cursive;
+}
+
+.span1{
+  font-family: 'Pacifico', cursive;
+}
+
+.image_in_container{
+  height: 150px;
+  width: 200px;
+}
