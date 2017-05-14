@@ -1,1 +1,2 @@
-# coursera-FullStackWebDevelopment
+# web-development-techniques
+
