@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <title>Grid</title>
+  <style>
+    .con{
+      background-color: #a1a1a1;
+      /*viewboard height*/
+      height: 110vh;
+    }
+    .grey{
+      background-color: orange;
+      height: 100px;
+    }
+    .grey2{
+      background-color: red;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+<h1 class="text-center">Grid</h1>
+<div class="container con">
+
+  <!--Every page in bootstrap is divided into 12 columns -->
+  <div class="row">1- No Funtions</div>
+  <div class="row">
+    <div class="col grey">column 1</div>
+    <div class="col grey2">column 2</div>
+    <div class="col grey">column 3</div>
+  </div>
+
+  <!-- 2nd- Here we give column-1 half of the container. This can be done with
+  the help of 12-grid column where 6 columns is given to "column-1"-->
+<div class="row">2- Column1 with half container 6-2-3/12 </div>
+  <div class="row">
+    <div class="col-sm-6 grey2">column 1</div>
+    <div class="col-sm-2 grey">column 2</div>
+    <div class="col-sm-3 grey2">column 3</div>
+  </div>
+
+  <div class="row">3- without flexing a column- work in fixed space- assumes the width of column 2,3</div>
+  <!-- Adapt the height and other variables(for text and images etc) on change of width -->
+  <!-- step1: justify content for the medium break point and make it center-->
+  <div class="row">
+    <div class="col-sm-6 grey2">column 1</div>
+    <!--step2: col-md-auto makes the step1 active for "Column2"  -->
+    <div class="col-sm grey">column 2 Here is Something You didnt know</div> <!-- Automatically manage the column - flexes itself (everything to center) -->
+    <div class="col-sm grey2">column 3</div>
+  </div>
+
+    <div class="row">4- justify content center to column 2 ( increses the width if N-O-columns not specified) </div>
+  <!-- step1: justify content for the medium break point and make it center-->
+  <div class="row justify-content-md-center">
+    <div class="col-sm-6 grey2">column 1</div>
+    <!--step2: col-md-auto makes the step1 active for "Column2"  -->
+    <div class="col-sm col-md-auto grey">column 2 col-sm col-md-auto grey </div> <!-- Automatically manage the column - flexes itself (everything to center) -->
+    <div class="col-sm grey2">column 3 Here is Something You didnt know </div>
+  </div>
+
+  <div class="row">5-  creates a breakpoint but still is a single row, just shows the 4 columns in 2 rows, Rather than this method creating a new row recommended</div>
+  <div class="row">
+    <div class="col grey">column 1</div>
+    <div class="col grey2">column 2</div>
+    <div class="w-100"></div> <!-- This just creates a breakpoint but still is a single row ,Rather than this new row recommended-->
+    <div class="col grey">column 3</div>
+    <div class="col grey2">column 4</div>
+  </div>
+
+  <div class="row">6- for larger screen divide into 2:1:1, for medium screen remains equal sizes, for smaller screens 1:2:1 </div>
+  <div class="row">
+    <div class="col-lg-6 col-md-4 col-sm-3 grey">column 1</div>
+    <div class="col-lg-3 col-md-4 col-sm-6 grey2">column 2</div>
+    <div class="col-lg-3 col-md-4 col-sm-3 grey">column 3</div>
+  </div>
+
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+</html>
